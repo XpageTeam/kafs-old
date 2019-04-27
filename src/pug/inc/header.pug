@@ -1,0 +1,54 @@
+header.head
+	.head__top-cont
+		.wrapper
+			.head__top
+				.head-city
+					select.head-city__select
+						option(value="0" selected="") Челябинск
+						- for (let i = 1; i <= 2; i++)
+							option(value=i) Екатеринбург
+						option(value="4") Москва
+						option(value="5") Комсомольск-на-Амуре
+				.head-phone
+					span
+						svg.ico
+							use(xlink:href="#ico-tel")
+					a(href="tel: 8 800 500 51 70") 8 800 500 51 70
+				.head-call
+					a(href="#") Заказать звонок
+
+				nav.head__menu
+					ul.head-menu
+						li.head-menu__item.active
+							a.head-menu__link(href="#") Статский советник 
+						li.head-menu__item
+							a.head-menu__link(href="#") Семинары
+						li.head-menu__item
+							a.head-menu__link(href="#") Сми о нас 
+						li.head-menu__item
+							a.head-menu__link(href="#") Контакты
+
+	.head__bot-cont
+		.wrapper
+			.head__bot
+
+				.head__logo
+					a.logo(href="#")
+						img(src="img/logo.svg" alt="")
+				nav.head__menu
+					ul.head-menu
+						li.head-menu__item.active
+							a.head-menu__link(href="#") Защита Интеллектуальной собственности
+						li.head-menu__item
+							a.head-menu__link(href="#") Бизнесу
+						li.head-menu__item
+							a.head-menu__link(href="#") Гражданам
+						li.h-menu__item
+							a.head-menu__link(href="#") Судебная практика
+						li.head-menu__item
+							a.head-menu__link(href="#") Блог юриста
+
+				.head__burger
+					.burger
+						span
+				

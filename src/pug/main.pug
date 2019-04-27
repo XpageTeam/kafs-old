@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.pug
+		include inc/css.pug
+	body.main.loading
+		.mobile-menu
+		main#content
+			include inc/header.pug
+			.content
+				include inc/main-banner.pug
+				.statistic__cont
+					.wrapper
+						.statistic
+							.statistic__list 
+								.statistic__item 
+									.statistic__label Более
+									.statistic__num(data-from="0" data-to="15") 0
+									.statistic__text лет успешной практики
+								.statistic__item 
+									.statistic__label Более
+									.statistic__num(data-from="0" data-to="500") 0
+									.statistic__text успешно проведенных дел
+								.statistic__item 
+									.statistic__label Более
+									.statistic__num(data-from="0" data-to="500") 0
+									.statistic__text довольных клиентов
+
+				include inc/accordion.pug
+				.ordering-form-cont
+					.wrapper
+						include inc/ordering-form.pug
+				.law-practice-cont
+					.wrapper
+						.law-practice
+							.law-practice__title 
+								span Судебная практика
+								.law-practice-arrow
+							.law-practice__slider
+								.law-practice__slide
+									.law-practice__slide-title Суть дела
+									.law-practice__slide-text В январе 2014 года в сети Интернет на сайте Центра защиты прав животных «ВИТА» были размещены видеоролики под названиями: «Искалеченного львенка циркачи, представившиеся труппой Запашных, продали за ненадобностью в Москву. Расследование Виты» и «Циркачи покалечили и продали львенка. Интервью с покупателями».
+								.law-practice__slide
+									.law-practice__slide-title Результат
+									.law-practice__slide-text В январе 2014 года в сети Интернет на сайте Центра защиты прав животных «ВИТА» были размещены видеоролики под названиями: «Искалеченного львенка циркачи, представившиеся труппой Запашных, продали за ненадобностью в Москву. Расследование Виты» и «Циркачи покалечили и продали львенка. Интервью с покупателями».
+								.law-practice__slide
+									.law-practice__slide-title Суть дела
+									.law-practice__slide-text В январе 2014 года в сети Интернет на сайте Центра защиты прав животных «ВИТА» были размещены видеоролики под названиями: «Искалеченного львенка циркачи, представившиеся труппой Запашных, продали за ненадобностью в Москву. Расследование Виты» и «Циркачи покалечили и продали львенка. Интервью с покупателями».
+								.law-practice__slide
+									.law-practice__slide-title Результат
+									.law-practice__slide-text В январе 2014 года в сети Интернет на сайте Центра защиты прав животных «ВИТА» были размещены видеоролики под названиями: «Искалеченного львенка циркачи, представившиеся труппой Запашных, продали за ненадобностью в Москву. Расследование Виты» и «Циркачи покалечили и продали львенка. Интервью с покупателями».
+
+				.partners-cont
+					.wrapper
+						.partners
+							.partners-top
+								.partners-title 
+									span Партнеры
+									.partners-arrow
+							.partners-slider
+								- for (let i = 0; i < 2; i++)
+									each title, i in ["АО “Обувная фирма “Юничел”", "Группа компаний “Союзпищепром”", "Кондитерская фабрика”Кременкульская”", "Оружейная фабрика “Арт-грани”"]
+										a(href="#").partners-slide
+											.partners-item__arrow
+												span
+											.partners-item__title=title
+				.advantages-cont
+					.wrapper
+						.advantages
+							.advantages__top
+								.advantages-title Наши преимущества
+								.advantages-arrow
+							.advantages__list
+								.advantages__item
+									.advantages__item-title
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Экспертность
+									.advantages__item-text Более 15 лет опыта, высокий профессионализм, более 500 выигранных дел, признание коллег – все это позволяет нам решать Ваши проблемы экспертно
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Результативность
+									.advantages__item-text Нам важно решить Вашу проблему, а не только выиграть суд. Для любой Вашей задачи найдется наше решение
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Надежность
+									.advantages__item-text С момента обращения  мы обеспечиваем Вам  моральный  комфорт и безопасность от действий противной стороны и ее адвокатов, сотрудников банка и коллекторов, иных участников конфликта
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Экспертность
+									.advantages__item-text Более 15 лет опыта, высокий профессионализм, более 500 выигранных дел, признание коллег – все это позволяет нам решать Ваши проблемы экспертно
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Результативность
+									.advantages__item-text Нам важно решить Вашу проблему, а не только выиграть суд. Для любой Вашей задачи найдется наше решение
+								.advantages__item
+									.advantages__item-title 
+										span
+											svg.ico
+												use(xlink:href="#ico-advantages")
+										span Надежность
+									.advantages__item-text С момента обращения  мы обеспечиваем Вам  моральный  комфорт и безопасность от действий противной стороны и ее адвокатов, сотрудников банка и коллекторов, иных участников конфликта
+				.news-main-cont
+					.wrapper
+						.news
+							.news-main
+								.news-top
+									.news-title СМИ о нас
+									a(href="").btn Все новости
+								.news__list
+									a(href="").news__item
+										.news__item-title Челябинский суд решит спор между автором патента и производителями подъемника для инвалидов
+										.news__item-date 2019.04.02
+									a(href="").news__item
+										.news__item-title «Вместо дворца – сарай!» На Южном Урале разгорается скандал вокруг проекта за 1 млрд руб.
+										.news__item-date 2019.04.02
+									a(href="").news__item
+										.news__item-title Челябинский суд встал на сторону «крушителей патента»
+										.news__item-date 2019.04.02
+
+							.ordering-form
+								.ordering-form__title Закажите обратный звонок
+								form(action="")
+									.form-wrap
+										.forms__input-cont
+											input.forms__input(type="text" placeholder="Иванов Иван Иванович" required="")
+											label.forms__label Ваше имя
+											.forms__error-message
+										.forms__input-cont
+											input.forms__input(type="teд" placeholder="+7 (351) 000 00 00 " required="")
+											label.forms__label Ваш телефон
+											.forms__error-message
+										.forms__input-cont
+											input.forms__input(type="teд" placeholder="Введите текст" required="")
+											label.forms__label Ваша проблема
+											.forms__error-message
+									.forms__bot
+										.forms__submit
+											input.btn(type="submit" value="Оcтавить заявку")
+										.forms__req Нажимая на кнопку отправки сообщения, я соглашаюсь на обработку моих <a href="#">персональных данных</a>
+
+	
+
+
+
+
+
+
+
+
+
+
+								
+
+				
+				
+		include inc/footer.pug
+		include inc/scripts.pug
