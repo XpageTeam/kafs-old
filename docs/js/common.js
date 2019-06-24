@@ -9516,6 +9516,16 @@ module.exports = function (regExp, replace) {
 
 	var loadScripts = function loadScripts() {
 
+		$(".to-full").click(function (e) {
+			Cookies.set("full-version", 1);
+			location.reload();
+		});
+
+		$(".to-mobile").click(function (e) {
+			Cookies.remove("full-version");
+			location.reload();
+		});
+
 		if ($(window).width() < 660) {
 			$('.content.text table').wrap('<div class="table-wrap"></div>');
 		}
@@ -9578,7 +9588,7 @@ module.exports = function (regExp, replace) {
 
 			$this.closest(".main .contacts_item_bl").toggleClass("js-opened");
 
-			$this.next("p").slideToggle(300);
+			$this.next("div").slideToggle(300);
 		});
 
 		$(".main .contacts_item").click(function () {

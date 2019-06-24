@@ -43,3 +43,136 @@
 
 	iframe
 		width: 100% !important
+
+@media screen and (max-width: 1000px)
+
+	header .top-menu
+		display: flex
+		padding: 20px !important
+		border-bottom: 1px solid var(--main-color)
+
+		.resp-logo__cont, address.phone
+			width: 50%
+			border: 0
+			padding: 0 !important
+			margin: 0 !important
+
+		address.phone
+			text-align: right
+
+		.btn
+			display: none !important
+
+		.burger
+			display: none
+
+
+
+
+	main section:not([class='banner'])
+		padding: 0
+
+	.categories
+		&-new
+			padding: 0
+			grid-template-columns: repeat(2, 1fr)
+			margin-bottom: 0
+			grid-gap: 0
+
+		&__one
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			padding: 35px 27px 33px
+			border-bottom: 1px solid var(--main-color)
+
+			&:not(:nth-child(even))
+				border-right: 1px solid var(--main-color)
+
+			&-top
+				flex-direction: column
+				align-items: center
+
+			&-title-cont
+				display: flex
+				flex-direction: column-reverse
+				align-items: center
+
+			&-subtitle
+				margin-top: 0
+
+				span
+					display: none
+
+			&-title
+				font-size: 16px
+
+				i
+					font-size: 13px
+
+			&-price
+				position: static !important
+				font-size: 18px
+				color: #A0A0A0
+
+			&-top
+				border: 0
+				padding: 0 0 30px
+
+
+			&-mid
+				display: none
+
+			&-bot
+				display: flex
+				justify-content: center
+
+			&-img-cont
+				margin-right: 0
+				margin-bottom: 22px
+
+				img
+					width: 55px
+
+	.default-btn
+		border-radius: 100px
+
+	.instructors, .documents-new, .timetable__cont, .question-answer
+		display: none
+
+	.filials
+		&:before
+			content: 'Филиалы'
+			padding-bottom: 27px
+			font-size: 22px
+			width: 100%
+			display: block
+			background: var(--main-color)
+			color: #fff
+
+	.contacts_col_cont_title
+		display: none
+
+	.main 
+		.contacts_item_bl
+			b
+				font-size: 18px
+				padding: 25px 55px 25px 22px
+				border-bottom: 1px solid #E3E3E3
+
+	.contacts_col_cont_txt-info
+		display: none
+
+		div
+			padding: 22px !important
+
+	#map	
+		display: none !important
+
+	.site-version
+		background: #fff
+		padding: 10px 23px
+		margin: 0 20px 20px
+
+
+
