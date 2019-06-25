@@ -46,6 +46,18 @@
 
 @media screen and (max-width: 1000px)
 
+	.msgs__right
+		.soc
+			a
+				&[href*="vk.com"]
+					background: url('../img/icp-vk.svg') no-repeat center
+
+				&[href*="instagram.com"]
+					background: url('../img/ico-inst.svg') no-repeat center
+
+	.site-version
+		display: block !important
+
 	header .top-menu
 		display: flex
 		padding: 20px !important
@@ -121,7 +133,23 @@
 
 
 			&-mid
-				display: none
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 82px
+
+				a
+					font-size: 0
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 82px
+					padding: 0
+
+					&:after
+						display: none
 
 			&-bot
 				display: flex
@@ -175,4 +203,22 @@
 		margin: 0 20px 20px
 
 
+	.contacts_item
+		color: #000
+		padding-left: 25px
+		background: url('../img/ico-location.svg') no-repeat left 0 top 5px
 
+
+		span
+			border: 0
+
+	.cat-popup
+		padding: 20px
+
+		.categories__one-mid
+			position: static
+
+@media screen and (max-width: 660px)
+
+	header .top-menu address span
+		margin-bottom: 6px

@@ -16,3 +16,39 @@ main .number_one .content .write
 .contacts_col_cont_txt-info
 	display: none
 
+body:not(.full-version)
+	.site-version
+		display: none
+
+body.full-version
+	padding: 15.37vh 0 0 11.4vw
+
+	header 
+		.top-menu
+			height: 160px
+			padding: 20px
+
+			ul 
+				a
+					padding: 9px 20px 8px
+
+	.to-mobile
+		display: inline-block
+		position: absolute
+		bottom: 20px
+		left: 250px
+		background: #fff
+		padding: 10px 20px
+
+
+header
+	.left-fixed
+		.soc
+			a
+				&[href*="vk.com"]
+					background: url('../img/icp-vk.svg') no-repeat center
+
+				&[href*="instagram.com"]
+					background: url('../img/ico-inst.svg') no-repeat center
+
+
