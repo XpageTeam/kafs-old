@@ -86,10 +86,14 @@
 
 	.categories
 		&-new
+			display: flex !important
+			flex-wrap: wrap !important
+			flex-direction: row !important
 			padding: 0
 			grid-template-columns: repeat(2, 1fr)
 			margin-bottom: 0
 			grid-gap: 0
+			margin-right: -1px
 
 		&__one
 			display: flex
@@ -97,9 +101,17 @@
 			justify-content: space-between
 			padding: 35px 27px 33px
 			border-bottom: 1px solid var(--main-color)
+			width: calc(100% / 2) !important
+			border-right: 1px solid var(--main-color)
 
-			&:not(:nth-child(even))
-				border-right: 1px solid var(--main-color)
+			&:nth-child(2)
+				order: -1
+				width: 100% !important
+
+			&:last-child:nth-child(even)
+				width: 100% !important
+
+		
 
 			&-top
 				flex-direction: column
@@ -118,6 +130,7 @@
 
 			&-title
 				font-size: 16px
+				text-align: center
 
 				i
 					font-size: 13px
@@ -145,8 +158,10 @@
 					top: 0
 					left: 0
 					right: 0
-					bottom: 82px
+					bottom: 0
 					padding: 0
+					width: 100%
+					-webkit-highlight: none
 
 					&:after
 						display: none
