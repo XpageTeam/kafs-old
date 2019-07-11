@@ -9502,7 +9502,6 @@ module.exports = function (regExp, replace) {
 	// 	// })
 	// 	return false;
 	// };
-
 	var setHeiHeight = function setHeiHeight() {
 		$('.main_screen_item, .main_screen_tb').css({
 			'height': $(window).height() + 'px'
@@ -9583,7 +9582,7 @@ module.exports = function (regExp, replace) {
 			$this.find(".faq_item_answer").slideToggle(300);
 		});
 
-		$(".main .contacts_item_bl b").click(function () {
+		$(".main-content .contacts_item_bl b").click(function () {
 			var $this = $(this);
 
 			$this.closest(".main .contacts_item_bl").toggleClass("js-opened");

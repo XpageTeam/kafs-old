@@ -23,7 +23,6 @@ if (window.frameCacheVars !== undefined) BX.addCustomEvent("onFrameDataReceived"
 // 	// })
 // 	return false;
 // };
-
 var setHeiHeight = function setHeiHeight() {
 	$('.main_screen_item, .main_screen_tb').css({
 		'height': $(window).height() + 'px'
@@ -96,6 +95,7 @@ var loadScripts = function loadScripts() {
 		}]
 	});
 
+
 	$(".main .faq_item").click(function () {
 		var $this = $(this);
 
@@ -104,7 +104,7 @@ var loadScripts = function loadScripts() {
 		$this.find(".faq_item_answer").slideToggle(300);
 	});
 
-	$(".main .contacts_item_bl b").click(function () {
+	$(".main-content .contacts_item_bl b").click(function () {
 		var $this = $(this);
 
 		$this.closest(".main .contacts_item_bl").toggleClass("js-opened");
