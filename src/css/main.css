@@ -676,28 +676,15 @@ main .banner {
     vertical-align: middle; }
   main .banner .text-block, main .banner .text-block .btn {
     color: #fff; }
-  main .banner .text-block {
-   /* margin-left: 12.83489%;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 13%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    max-width: 855px;
-    box-sizing: border-box;
-    /*margin-top: 19vh;*/
-    /*width: 40.18692%;*/ }
-    main .banner .text-block h2 {
+
+/*    main .banner .text-block h2 {
       font-size: 3.75rem; }
     main .banner .text-block h3 {
       font-size: 1.875rem;
-      margin-top: 25px; }
-    main .banner .text-block .text {
+      margin-top: 25px; }*/
+/*    main .banner .text-block .text {
       font-size: 1.5625rem;
-      margin-top: 23px; }
+      margin-top: 23px; }*/
     main .banner .text-block .read-more {
       display: inline-block;
       margin-top: 20px;
